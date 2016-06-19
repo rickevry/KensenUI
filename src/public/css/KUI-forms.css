@@ -1,0 +1,262 @@
+.clear-fix:after, .clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clear-fix, .clearfix { zoom: 1; }
+
+.KUI-form { width: 100%; max-width: 1000px; }
+.KUI-form .fields { list-style: none; margin: 0 0 20px; padding: 0 }
+.KUI-form .fields > .field { float: left; padding-bottom: 5px; margin: 0 0 0 0; width: 100%; min-height: 75px; }
+.KUI-form .fields.columns-one > .field { width: 98%; }
+.KUI-form .fields.columns-two > .field { width: 49%; }
+.KUI-form .fields.columns-three > .field { width: 33%; }
+.KUI-form .fields > .field.wide { width: 100%; }
+.KUI-form .fields > .field label, .form .fields > .field .label { display: block; font-weight: bold; margin-bottom: 2px; }
+.KUI-form .fields > .field input[type="text"], .KUI-form .fields > .field input[type="password"] { display: block; }
+.KUI-form .fields > .field .req { color: #e10000; }
+.KUI-form .fields > .field h2 { border-bottom: 1px solid #ccc; color: #2277AE; font-size: 30px; }
+.KUI-form .fields > .field.textarea { min-height: 158px; }
+.KUI-form .fields > .field.textarea textarea { height: 100px; }
+.KUI-form .fields > .field.checkbox input { float: left; height: 20px; width: 20px; background-color: blue;}
+.KUI-form .fields > .field.checkbox label { float: left; font-weight: normal; }
+.KUI-form .fields > .field ul.fields { margin-left: 20px; }
+.KUI-form-buttons { max-width: 900px; text-align: right; }
+
+.KUI-form .fields > .field h3 {
+    background-color: lightblue;
+}
+
+.KUI-form .fields > .field .KUI-form-input {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: default;
+    display: table;
+}
+
+.KUI-form-input-area {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333;
+    cursor: default;
+    display: table;
+}
+
+
+.KUI-form-select {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    height: 40px;
+    border-color: #d9d9d9 #ccc #b3b3b3;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: #333; 
+    background: url(http://maps.vermont.gov/Geocortex/Essentials/ANR/REST/sites/StreamAlterations/viewers/StreamAlterations/VirtualDirectory/Resources/Images/Icons/arrow-down-small-16.png) #FFF right 10px no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 52px;
+    padding-left: 13px;
+}
+
+.KUI-form-select::-ms-expand {
+    display: none;
+}
+
+.KUI-form .columns-one .field .KUI-form-input  {
+    width: 95%;
+}
+
+.KUI-form .columns-one .field .KUI-form-input-area {
+    width: 95%;
+}
+
+
+.KUI-form .columns-two .field .KUI-form-input {
+    width: 90%;
+}
+
+.KUI-form .columns-two .field .KUI-form-select {
+    width: 95%;
+}
+
+.KUI-form-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.KUI-form .fields > .field .input-calendar input {
+    display: inline-block;    
+} 
+
+.onoffswitch {
+    position: relative; width: 60px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 24px; padding: 0; line-height: 24px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Yes";
+    padding-left: 10px;
+    background-color: #64A334; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "No";
+    padding-right: 10px;
+    background-color: #A71818; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 14px; margin: 5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 32px;
+    border: 1px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/* Spinner *//* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* End Spinner */

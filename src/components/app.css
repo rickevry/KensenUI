@@ -1,0 +1,15 @@
+.test-class{
+    color: red;
+    font-family: "Arial";
+}
+
+h1.test-class{
+    color: green;
+}
+
+@font-face {
+    font-family: "Office365Icons";
+    src: url("http://cdn.sharepointonline.com/15772/_layouts/15/fonts/Office365Icons.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
