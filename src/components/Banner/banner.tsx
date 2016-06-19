@@ -1,6 +1,8 @@
 /// <reference path="../../../typings/tsd.d.ts" />
 import * as React from 'react';
 
+// test 
+
 class BannerItem
 {
     public imageUrl: string;
